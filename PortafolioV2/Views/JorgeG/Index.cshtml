@@ -1,0 +1,206 @@
+﻿@{
+    ViewData["Title"] = "Jorge G";
+    Layout = "/Views/Shared/JorgeG/_LayoutJG.cshtml";
+}
+
+
+<!-- Navigation-->
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
+    <a class="navbar-brand js-scroll-trigger" href="#page-top">
+        <span class="d-block d-lg-none">Gonzalez Jorge</span>
+        <span class="d-none d-lg-block"><img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="assets/img/profile.jpg" alt="" /></span>
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav">
+            <li class="nav-item"><a id="IdMenuAbout" class="nav-link js-scroll-trigger" href="#about">About</a></li>
+            <li class="nav-item"><a id="IdMenuExperience" class="nav-link js-scroll-trigger" href="#experience">Experience</a></li>
+            <li class="nav-item"><a id="IdMenuEducation" class="nav-link js-scroll-trigger" href="#education">Education</a></li>
+            <li class="nav-item"><a id="IdMenuSkills" class="nav-link js-scroll-trigger" href="#skills">Skills</a></li>
+            <li class="nav-item"><a id="IdMenuInterests" class="nav-link js-scroll-trigger" href="#interests">Interests</a></li>
+            <li class="nav-item"><a id="IdMenuGallery" class="nav-link js-scroll-trigger" href="#Gallery">Gallery</a></li>
+            <li class="nav-item mt-3">
+                <div>
+                    <i class="fas fa-language" style="color:white; font-size:50px !important;"></i>
+
+                </div>
+                <div>
+                    <select name="Langs" id="Langs" class="custom-select">
+                        <option selected value="ESP">Español</option>
+                        <option value="ENG">English</option>
+                    </select>
+                </div>
+
+
+            </li>
+        </ul>
+    </div>
+</nav>
+<!-- Page Content-->
+<div class="container-fluid p-0">
+    <!-- About-->
+    <section class="resume-section" id="about">
+        <div class="resume-section-content">
+            <h1 class="mb-0">
+                Gonzalez
+                <span class="text-primary">Jorge</span>
+            </h1>
+            <div class="subheading mb-5">
+                Concepción, VIII Region, Chile · (+56) 996 299 534 ·
+                <a href="mailto:Ing.jorge.gonzalez92@gmail.com">Ing.jorge.gonzalez92@gmail.com</a>
+            </div>
+            <p id="IdAboutResume" class="lead mb-5"></p>
+            <div class="social-icons">
+                <a class="social-icon" href="https://linkedin.com/in/jorgegonzalez92"><i class="fab fa-linkedin-in"></i></a>
+                <a class="social-icon" href="https://github.com/jorgez300/"><i class="fab fa-github"></i></a>
+                @*<a class="social-icon" href="#"><i class="fab fa-twitter"></i></a>
+                <a class="social-icon" href="#"><i class="fab fa-facebook-f"></i></a>*@
+            </div>
+        </div>
+    </section>
+    <hr class="m-0" />
+    <!-- Experience-->
+    <section class="resume-section" id="experience">
+        <div class="resume-section-content" id="IdExperienceContent">
+            <h2 class="mb-5" id="IdTitleExperience">Experience</h2>
+
+        </div>
+    </section>
+    <hr class="m-0" />
+    <!-- Education-->
+    <section class="resume-section" id="education">
+        <div class="resume-section-content" id="IdEducationContent">
+            <h2 class="mb-5" id="IdTitleEducation">Education</h2>
+            <div class="d-flex flex-column flex-md-row justify-content-between mb-5 EducationItem">
+                <div class="flex-grow-1">
+                    <h3 class="mb-0">University of Colorado Boulder</h3>
+                    <div class="subheading mb-3">Bachelor of Science</div>
+                    <div>Computer Science - Web Development Track</div>
+                    <p>GPA: 3.23</p>
+                </div>
+                <div class="flex-shrink-0"><span class="text-primary">August 2006 - May 2010</span></div>
+            </div>
+            <div class="d-flex flex-column flex-md-row justify-content-between EducationItem">
+                <div class="flex-grow-1">
+                    <h3 class="mb-0">James Buchanan High School</h3>
+                    <div class="subheading mb-3">Technology Magnet Program</div>
+                    <p>GPA: 3.56</p>
+                </div>
+                <div class="flex-shrink-0"><span class="text-primary">August 2002 - May 2006</span></div>
+            </div>
+        </div>
+    </section>
+    <hr class="m-0" />
+    <!-- Skills-->
+    <section class="resume-section" id="skills">
+        <div class="resume-section-content">
+            <h2 class="mb-5" id="IdTitleSkills">Skills</h2>
+            <div class="subheading mb-3" id="IdSkillsTitle">Programming Languages & Tools</div>
+            <ul class="fa-ul mb-0" id="IdToolsContent">
+                <li class="ToolsItem">
+                    <span class="fa-li"><i class="fas fa-check"></i></span>
+                    Mobile-First, Responsive Design
+                </li>
+            </ul>
+            <div class="subheading mb-3 mt-3" id="IdWorkflowTitle">Workflow</div>
+            <ul class="fa-ul mb-0" id="IdWorkflowContent">
+                <li class="WorkflowItem">
+                    <span class="fa-li"><i class="fas fa-check"></i></span>
+                    Agile Development & Scrum
+                </li>
+            </ul>
+        </div>
+    </section>
+    <hr class="m-0" />
+    <!-- Interests-->
+    <section class="resume-section" id="interests">
+        <div class="resume-section-content">
+            <h2 class="mb-5" id="IdTitleInterests">Interests</h2>
+            <p class="mb-0" id="IdInterests">When forced indoors, I follow a number of sci-fi and fantasy genre movies and television shows, I am an aspiring chef, and I spend a large amount of my free time exploring the latest technology advancements in the front-end web development world.</p>
+        </div>
+    </section>
+    <hr class="m-0" />
+    <!-- Awards-->
+
+    <style>
+    </style>
+    <section class="resume-section" id="Gallery">
+        <div class="resume-section-content">
+            <h2 class="mb-4" id="IdTitleGallery">Gallery</h2>
+            <div class="row" id="IdGalleryContent">
+                <div class="col-4 GalleryItem">
+                    <h2>Card Image</h2>
+                    <p>Image at the top (card-img-top):</p>
+                    <div class="card" style="width:300px">
+                        <img class="card-img-top" src="~/Galeria/lights.jpg" alt="Card image" style="width:100%">
+                        <div class="card-body">
+                            <h4 class="card-title">John Doe</h4>
+                            <p class="card-text">Some example text some example text. John Doe is an architect and engineer</p>
+                            <a href="#" class="btn btn-primary">See Profile</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+
+
+    <!-- The Modal -->
+    <div class="modal fade" id="myModal">
+        <div class="modal-dialog modal-xl">
+            <div class="modal-content">
+
+                <!-- Modal Header -->
+                <div class="modal-header">
+                    <h4 class="modal-title" id="GalleryModalTitle">Modal Heading</h4>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+
+                <!-- Modal body -->
+                <div class="modal-body">
+                    <div id="GalleryContent" class="carousel slide" data-ride="carousel">
+
+                        <!-- Indicators -->
+                        <ul class="carousel-indicators" id="CarouselIndicators">
+                            <li data-target="#GalleryContent" data-slide-to="0" class="active CarouselIndicatorsItem"></li>
+                            <li data-target="#GalleryContent" data-slide-to="1" class="CarouselIndicatorsItem"></li>
+                            <li data-target="#GalleryContent" data-slide-to="2" class="CarouselIndicatorsItem"></li>
+                        </ul>
+
+                        <!-- The slideshow -->
+                        <div class="carousel-inner text-center" id="CarouselImgs">
+                            <div class="carousel-item active CarouselImgsItem">
+                                <img src="la.jpg" alt="Los Angeles">
+                            </div>
+                            <div class="carousel-item CarouselImgsItem">
+                                <img src="chicago.jpg" alt="Chicago">
+                            </div>
+                            <div class="carousel-item CarouselImgsItem">
+                                <img src="ny.jpg" alt="New York" class="img-fluid">
+                            </div>
+                        </div>
+
+                        <!-- Left and right controls -->
+                        <a class="carousel-control-prev  text-success" href="#GalleryContent" data-slide="prev">
+                            <span class="carousel-control-prev-icon text-success"></span>
+                        </a>
+                        <a class="carousel-control-next text-success" href="#GalleryContent" data-slide="next">
+                            <span class="carousel-control-next-icon text-success"></span>
+                        </a>
+
+                    </div>
+                </div>
+
+                <!-- Modal footer -->
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-dismiss="modal" id="BtnGalleryModalClose">Close</button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+
