@@ -9,6 +9,7 @@
   <ItemGroup>
     <Folder Include="wwwroot\AracelisM\img\" />
     <Folder Include="wwwroot\JorgeG\img\" />
+    <Folder Include="wwwroot\PolarSoft\" />
     <Folder Include="wwwroot\Shared\" />
   </ItemGroup>
 

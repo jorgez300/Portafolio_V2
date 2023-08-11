@@ -1,0 +1,165 @@
+﻿@{
+    ViewData["Title"] = "GO";
+    Layout = "/Views/Shared/GesfarmOnline/_LayoutGO.cshtml";
+}
+
+
+<div class="container-fluid">
+
+    <div id="Filtros" class="row d-none">
+        <div class="col-8 mt-2">
+
+            <select id="OriData" class="form-select form-select-lg">
+                <option value="X">Seleccione</option>
+                <option value="MIX">Mixto</option>
+                <option value="FFD">FFD</option>
+                <option value="VP">VP</option>
+            </select>
+
+        </div>
+        <div class="col-4 mt-2">
+            <button id="Refrescar" type="button" class="btn btn-success w-100 h-100 fw-bolder" >Refrescar</button>
+        </div>
+    </div>
+
+    <div id="DivEspecifico" class="row">
+        <div class="col-12 mt-2">
+            <div class="card shadow-sm">
+                <div class="card-body pt-1 pb-5" style="height: 550px !important">
+                    <h5 class="card-title">Acumulado Costo Venta</h5>
+                    <canvas id="ChartCostoVenta" width="400" height="400"></canvas>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-12 mt-2">
+            <div class="card shadow-sm">
+                <div class="card-body pt-1 pb-5" style="height: 550px !important">
+                    <h5 class="card-title">Costo vs Utilidad</h5>
+                    <canvas id="ChartCostoUtilidad" width="400" height="400"></canvas>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-12 mt-2">
+            <div class="card shadow-sm">
+                <div class="card-body pt-1 pb-5" style="height: 550px !important">
+                    <h5 class="card-title">Porcentaje de Utilidad</h5>
+                    <canvas id="ChartPorcenUtilidad" width="400" height="400"></canvas>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-12 mt-2">
+            <div class="card shadow-sm">
+                <div class="card-body pt-1 pb-5" style="height: 550px !important">
+                    <h5 class="card-title">Total Ventas Realizadas</h5>
+                    <canvas id="ChartFacturas" width="400" height="400"></canvas>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-12 mt-2">
+            <div class="card shadow-sm">
+                <div class="card-body pt-1 pb-5" style="height: 550px !important">
+                    <h5 class="card-title">Articulo por venta</h5>
+                    <canvas id="ChartCantidad" width="400" height="400"></canvas>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-12 mt-2">
+            <div class="card shadow-sm">
+                <div class="card-body pt-1 pb-5" style="height: 550px !important">
+                    <h5 class="card-title">Monto por venta</h5>
+                    <canvas id="ChartMtoXVenta" width="400" height="400"></canvas>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-12 mt-2">
+            <div class="card shadow-sm">
+                <div class="card-body pt-1 pb-5" style="height: 550px !important">
+                    <h5 class="card-title">Items fallas</h5>
+                    <canvas id="ChartFallasCant" width="400" height="400"></canvas>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-12 mt-2">
+            <div class="card shadow-sm">
+                <div class="card-body pt-1 pb-5" style="height: 550px !important">
+                    <h5 class="card-title">Monto fallas</h5>
+                    <canvas id="ChartFallasMonto" width="400" height="400"></canvas>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="DivMixto" class="row d-none">
+        <div class="col-12 mt-2">
+            <div class="card shadow-sm">
+                <div class="card-body pt-1 pb-5" style="height: 550px !important">
+                    <h5 class="card-title">Mixto - Acumulado Venta</h5>
+                    <canvas id="ChartMixtoVenta" width="400" height="400"></canvas>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-12 mt-2">
+            <div class="card shadow-sm">
+                <div class="card-body pt-1 pb-5" style="height: 550px !important">
+                    <h5 class="card-title">Mixto - Porcentaje de Utilidad</h5>
+                    <canvas id="ChartMixtoPorcenUtilidad" width="400" height="400"></canvas>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-12 mt-2">
+            <div class="card shadow-sm">
+                <div class="card-body pt-1 pb-5" style="height: 550px !important">
+                    <h5 class="card-title">Mixto - Total Ventas Realizadas</h5>
+                    <canvas id="ChartMixtoFacturas" width="400" height="400"></canvas>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-12 mt-2">
+            <div class="card shadow-sm">
+                <div class="card-body pt-1 pb-5" style="height: 550px !important">
+                    <h5 class="card-title">Mixto - Articulo por venta</h5>
+                    <canvas id="ChartMixtoCantidad" width="400" height="400"></canvas>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-12 mt-2">
+            <div class="card shadow-sm">
+                <div class="card-body pt-1 pb-5" style="height: 550px !important">
+                    <h5 class="card-title">Mixto - Monto por venta</h5>
+                    <canvas id="ChartMixtoMtoXVenta" width="400" height="400"></canvas>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-12 mt-2">
+            <div class="card shadow-sm">
+                <div class="card-body pt-1 pb-5" style="height: 550px !important">
+                    <h5 class="card-title">Mixto - Items fallas</h5>
+                    <canvas id="ChartMixtoFallasCant" width="400" height="400"></canvas>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-12 mt-2">
+            <div class="card shadow-sm">
+                <div class="card-body pt-1 pb-5" style="height: 550px !important">
+                    <h5 class="card-title">Mixto - Monto fallas</h5>
+                    <canvas id="ChartMixtoFallasMonto" width="400" height="400"></canvas>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+</div>

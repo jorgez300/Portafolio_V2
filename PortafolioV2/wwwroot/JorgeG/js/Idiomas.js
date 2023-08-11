@@ -52,7 +52,7 @@
                 "Elaboración de sistemas Web .Net (Webforms, MVC, WEB API), responsivos orientados a escritorio y dispositivos móviles.",
                 "Programación PL\SQL, Transact SQL.",
                 "Implementación de integraciones a otros sistemas (SAP, SharePoint y Google Cloud).",
-                "Azure App Services y SQL Server.",
+                "Azure App Services, SQL Server, Functions, CosmosDB (Mongodb NoSql).",
                 "Elaboración de visores web en tiempo real y reportes web"
             ]
         }
@@ -81,7 +81,7 @@
             "Java (Android)",
             "Oracle (PL SQL)",
             "SQL Server (Transact SQL)",
-            "Azure (App Services)"
+            "Azure App Services, SQL Server, Functions, CosmosDB (Mongodb NoSql)"
         ],
         WorkflowTitle: "Ambientes de desarrollo",
         Workflows: [
@@ -237,7 +237,7 @@ let ENG = {
                 "Development of Web .Net systems (Webforms, MVC, WEB API), responsive oriented to desktop and mobile devices.",
                 "PL \ SQL programming, Transact SQL.",
                 "Implementation of integrations to other systems (SAP, SharePoint and Google Cloud).",
-                "Azure App Services and SQL Server.",
+                "Azure App Services, SQL Server, Functions, CosmosDB (Mongodb NoSql).",
                 "Elaboration of web viewers in real time and web reports."
             ]
         }
@@ -266,7 +266,7 @@ let ENG = {
             "Java (Android)",
             "Oracle (PL SQL)",
             "SQL Server (Transact SQL)",
-            "Azure (App Services)"
+            "Azure App Services, SQL Server, Functions, CosmosDB (Mongodb NoSql)"
         ],
         WorkflowTitle: "Development environment",
         Workflows: [
