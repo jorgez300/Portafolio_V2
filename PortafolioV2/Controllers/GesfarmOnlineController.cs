@@ -8,5 +8,10 @@ namespace PortafolioV2.Controllers
         {
             return View("~/Views/GesfarmOnline/Index.cshtml");
         }
+
+        public IActionResult Comparacion()
+        {
+            return View("~/Views/GesfarmOnline/Comparacion.cshtml");
+        }
     }
 }

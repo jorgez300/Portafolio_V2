@@ -7,13 +7,15 @@
 
 
     @await Html.PartialAsync("GesfarmOnline/Partial/_css")
+
+    @await Html.PartialAsync("GesfarmOnline/Partial/_js")
 </head>
 <body>
 
+    
 
     @RenderBody()
 
-    @await Html.PartialAsync("GesfarmOnline/Partial/_js")
     @await RenderSectionAsync("Scripts", required: false)
 
 </body>
